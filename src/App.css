@@ -1,0 +1,28 @@
+
+.App {
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.features{
+  pointer-events: none;
+}
+
+.features:hover > .feature:not(:hover){
+  opacity: .5;
+}
+
+.feature{
+  pointer-events: auto;
+  transition: ease-in-out .3s;
+}
+
+.feature:hover{
+  opacity: 1;
+  transition: ease-in-out .3s;
+}
+.feature:hover ~ .feature{
+  opacity: .5 !important;
+}
